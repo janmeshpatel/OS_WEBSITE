@@ -1,9 +1,52 @@
+<?php
+include "connection.php";
+
+if(isset($_POST['nike']))
+{
+    $name="Nike";
+    $price="10000";
+    $image="nike.png";
+}
+if(isset($_POST['puma']))
+{
+    $name="Puma";
+    $price="10000";
+    $image="puma.png";
+}
+if(isset($_POST['adidas']))
+{
+    $name="Adidas";
+    $price="10000";
+    $image="adidas.png";
+}
+if(isset($_POST['reebok']))
+{
+    $name="Reebok";
+    $price="10000";
+    $image="reebok.png";
+}
+if(isset($_POST['skechers']))
+{
+    $name="Skecher";
+    $price="10000";
+    $image="skechers.jpg";
+}
+if(isset($_POST['spark']))
+{
+    $name="Sparks";
+    $price="10000";
+    $image="sparx.jpg";
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="">
 <head>
     <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
-    <title>MotoFit</title>
+    <title>Online Shoes Shopping</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-green.min.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -20,8 +63,11 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
+
+
 </head>
 <body>
+
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
     <header class="mdl-layout__header">
@@ -45,6 +91,7 @@
             <a class="mdl-navigation__link" href="">item 4</a>
         </nav>
     </div>
+
     <main class="mdl-layout__content" style="background: #b7e3ff; height: 100%">
         <div class="winter-neva-gradient color-block mb-3 mx-auto z-depth-1-half" >
             <br>
@@ -56,17 +103,17 @@
 
                     <!--col 1-->
                     <div class="col-md-4">
-                        <div class="card card-cascade narrower" style="height: 300px; width: 300px">
+                        <div class="card card-cascade narrower" style="height: 350px; width: 350px">
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" style="height: 250px" src="reebok.png">
+                                <img class="card-img-top" style="height: 250px" src="images/<?php echo "".$image?>">
                                 <a><div class="mask rgba-white-slight"></div></a>
                             </div>
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Label -->
-                                <h4 class="black-text pb-2 pt-1"></i>Nike</h4>
+                                <h4 class="black-text pb-2 pt-1"></i><?php echo "".$name?></h4><h6><?php echo "price :".$price." rs"?></h6>
                             </div>
 
                             <!-- Card footer -->
@@ -83,17 +130,17 @@
 
                     <!--col 2-->
                     <div class="col-md-4">
-                        <div class="card card-cascade narrower" style="height: 300px; width: 300px">
+                        <div class="card card-cascade narrower" style="height: 350px; width: 350px">
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" style="height: 250px" src="reebok.png">
+                                <img class="card-img-top" style="height: 250px" src="images/<?php echo "".$image?>">
                                 <a><div class="mask rgba-white-slight"></div></a>
                             </div>
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Label -->
-                                <h4 class="black-text pb-2 pt-1"></i>Nike</h4>
+                                <h4 class="black-text pb-2 pt-1"></i><?php echo "".$name?></h4><h6><?php echo "price :".$price." rs"?></h6>
                             </div>
 
                             <!-- Card footer -->
@@ -110,17 +157,17 @@
 
                     <!--col 3-->
                     <div class="col-md-4">
-                        <div class="card card-cascade narrower" style="height: 300px; width: 300px">
+                        <div class="card card-cascade narrower" style="height: 350px; width: 350px">
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" style="height: 250px" src="reebok.png">
+                                <img class="card-img-top" style="height: 250px" src="images/<?php echo "".$image?>">
                                 <a><div class="mask rgba-white-slight"></div></a>
                             </div>
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Label -->
-                                <h4 class="black-text pb-2 pt-1"></i>Nike</h4>
+                                <h4 class="black-text pb-2 pt-1"></i><?php echo "".$name?></h4><h6><?php echo "price :".$price." rs"?></h6>
                             </div>
 
                             <!-- Card footer -->
@@ -137,17 +184,17 @@
 
                     <!--col 4-->
                     <div class="col-md-4">
-                        <div class="card card-cascade narrower" style="height: 300px; width: 300px">
+                        <div class="card card-cascade narrower" style="height: 350px; width: 350px">
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" style="height: 250px" src="reebok.png">
+                                <img class="card-img-top" style="height: 250px" src="images/<?php echo "".$image?>">
                                 <a><div class="mask rgba-white-slight"></div></a>
                             </div>
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Label -->
-                                <h4 class="black-text pb-2 pt-1"></i>Nike</h4>
+                                <h4 class="black-text pb-2 pt-1"></i><?php echo "".$name?></h4><h6><?php echo "price :".$price." rs"?></h6>
                             </div>
 
                             <!-- Card footer -->
@@ -164,17 +211,17 @@
 
                     <!--col 5-->
                     <div class="col-md-4">
-                        <div class="card card-cascade narrower" style="height: 300px; width: 300px">
+                        <div class="card card-cascade narrower" style="height: 350px; width: 350px">
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" style="height: 250px" src="reebok.png">
+                                <img class="card-img-top" style="height: 250px" src="images/<?php echo "".$image?>">
                                 <a><div class="mask rgba-white-slight"></div></a>
                             </div>
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Label -->
-                                <h4 class="black-text pb-2 pt-1"></i>Nike</h4>
+                                <h4 class="black-text pb-2 pt-1"></i><?php echo "".$name?></h4><h6><?php echo "price :".$price." rs"?></h6>
                             </div>
 
                             <!-- Card footer -->
@@ -191,17 +238,17 @@
 
                     <!--col 6-->
                     <div class="col-md-4">
-                        <div class="card card-cascade narrower" style="height: 300px; width: 300px">
+                        <div class="card card-cascade narrower" style="height: 350px; width: 350px">
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" style="height: 250px" src="reebok.png">
+                                <img class="card-img-top" style="height: 250px" src="images/<?php echo "".$image?>">
                                 <a><div class="mask rgba-white-slight"></div></a>
                             </div>
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Label -->
-                                <h4 class="black-text pb-2 pt-1"></i>Nike</h4>
+                                <h4 class="black-text pb-2 pt-1"></i><?php echo "".$name?></h4><h6><?php echo "price :".$price." rs"?></h6>
                             </div>
 
                             <!-- Card footer -->
@@ -218,17 +265,17 @@
 
                     <!--col 7-->
                     <div class="col-md-4">
-                        <div class="card card-cascade narrower" style="height: 300px; width: 300px">
+                        <div class="card card-cascade narrower" style="height: 350px; width: 350px">
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" style="height: 250px" src="reebok.png">
+                                <img class="card-img-top" style="height: 250px" src="images/<?php echo "".$image?>">
                                 <a><div class="mask rgba-white-slight"></div></a>
                             </div>
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Label -->
-                                <h4 class="black-text pb-2 pt-1"></i>Nike</h4>
+                                <h4 class="black-text pb-2 pt-1"></i><?php echo "".$name?></h4><h6><?php echo "price :".$price." rs"?></h6>
                             </div>
 
                             <!-- Card footer -->
@@ -245,17 +292,17 @@
 
                     <!--col 8-->
                     <div class="col-md-4">
-                        <div class="card card-cascade narrower" style="height: 300px; width: 300px">
+                        <div class="card card-cascade narrower" style="height: 350px; width: 350px">
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" style="height: 250px" src="reebok.png">
+                                <img class="card-img-top" style="height: 250px" src="images/<?php echo "".$image?>">
                                 <a><div class="mask rgba-white-slight"></div></a>
                             </div>
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Label -->
-                                <h4 class="black-text pb-2 pt-1"></i>Nike</h4>
+                                <h4 class="black-text pb-2 pt-1"></i><?php echo "".$name?></h4><h6><?php echo "price :".$price." rs"?></h6>
                             </div>
 
                             <!-- Card footer -->
@@ -272,17 +319,17 @@
 
                     <!--col 9-->
                     <div class="col-md-4">
-                        <div class="card card-cascade narrower" style="height: 300px; width: 300px">
+                        <div class="card card-cascade narrower" style="height: 350px; width: 350px">
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" style="height: 250px" src="reebok.png">
+                                <img class="card-img-top" style="height: 250px" src="images/<?php echo "".$image?>">
                                 <a><div class="mask rgba-white-slight"></div></a>
                             </div>
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Label -->
-                                <h4 class="black-text pb-2 pt-1"></i>Nike</h4>
+                                <h4 class="black-text pb-2 pt-1"></i><?php echo "".$name?></h4><h6><?php echo "price :".$price." rs"?></h6>
                             </div>
 
                             <!-- Card footer -->
@@ -299,17 +346,17 @@
 
                     <!--col 10-->
                     <div class="col-md-4">
-                        <div class="card card-cascade narrower" style="height: 300px; width: 300px">
+                        <div class="card card-cascade narrower" style="height: 350px; width: 350px">
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" style="height: 250px" src="reebok.png">
+                                <img class="card-img-top" style="height: 250px" src="images/<?php echo "".$image?>">
                                 <a><div class="mask rgba-white-slight"></div></a>
                             </div>
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Label -->
-                                <h4 class="black-text pb-2 pt-1"></i>Nike</h4>
+                                <h4 class="black-text pb-2 pt-1"></i><?php echo "".$name?></h4><h6><?php echo "price :".$price." rs"?></h6>
                             </div>
 
                             <!-- Card footer -->
@@ -326,17 +373,17 @@
 
                     <!--col 11-->
                     <div class="col-md-4">
-                        <div class="card card-cascade narrower" style="height: 300px; width: 300px">
+                        <div class="card card-cascade narrower" style="height: 350px; width: 350px">
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" style="height: 250px" src="reebok.png">
+                                <img class="card-img-top" style="height: 250px" src="images/<?php echo "".$image?>">
                                 <a><div class="mask rgba-white-slight"></div></a>
                             </div>
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Label -->
-                                <h4 class="black-text pb-2 pt-1"></i>Nike</h4>
+                                <h4 class="black-text pb-2 pt-1"></i><?php echo "".$name?></h4><h6><?php echo "price :".$price." rs"?></h6>
                             </div>
 
                             <!-- Card footer -->
@@ -353,17 +400,17 @@
 
                     <!--col 12-->
                     <div class="col-md-4">
-                        <div class="card card-cascade narrower" style="height: 300px; width: 300px">
+                        <div class="card card-cascade narrower" style="height: 350px; width: 350px">
 
                             <!-- Card image -->
                             <div class="view view-cascade overlay">
-                                <img class="card-img-top" style="height: 250px" src="reebok.png">
+                                <img class="card-img-top" style="height: 250px" src="images/<?php echo "".$image?>">
                                 <a><div class="mask rgba-white-slight"></div></a>
                             </div>
                             <!-- Card content -->
                             <div class="card-body card-body-cascade">
                                 <!-- Label -->
-                                <h4 class="black-text pb-2 pt-1"></i>Nike</h4>
+                                <h4 class="black-text pb-2 pt-1"></i><?php echo "".$name?></h4><h6><?php echo "price :".$price." rs"?></h6>
                             </div>
 
                             <!-- Card footer -->
@@ -389,6 +436,6 @@
         </div>
     </main>
 </div>
-
 </body>
 </html>
+
