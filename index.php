@@ -1,3 +1,6 @@
+<?php
+include "backend.php";
+?>
 <!DOCTYPE html>
 <html lang="">
 <head>
@@ -28,17 +31,17 @@
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-            <span class="mdl-layout-title"><a href="index.html" style="color: black">Welcome to Shoes Site</a></span>
+            <span class="mdl-layout-title"><a href="index.php" style="color: black">Welcome to Shoes Site</a></span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <span><input class="form-control mr-sm-2" type="search" placeholder="Search" style="width: 500px" aria-label="Search"></span>
-            <span><button class="btn btn-light" type="submit" style="height: 39px">Search</button></span>
+            <span><a class="btn btn-light " href="mycart.php" style="height: 40px">Search</a></span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span><button class="btn btn-light fas fa-shopping-cart " style="height: 39px" type="submit"> Cart</button></span>
-            <span><button class="btn btn-light" type="submit" style="height: 39px">Sign in</button></span>
+            <span><a class="btn btn-light fas fa-shopping-cart " href="mycart.php" style="height: 40px">&nbsp;&nbsp;Cart <?php echo "".$cart_no; ?></a></span>
+            <span><a class="btn btn-light " href="mycart.php" style="height: 40px">Sigin in</a></span>
         </div>
     </header>
     <div class="mdl-layout__drawer" style="background: #b7e3ff">
-        <span class="mdl-layout-title"><a href="index.html"><img src="" height="150px" width="150px">Add logo Image</a></span>
+        <span class="mdl-layout-title"><a href="index.php"><img src="" height="150px" width="150px">Add logo Image</a></span>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="">item 1</a>
             <a class="mdl-navigation__link" href="">itme 2</a>
