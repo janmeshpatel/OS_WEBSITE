@@ -9,7 +9,7 @@ if(isset($_POST['nike']))
 {
 
     //inserted action
-    $sql ="UPDATE action set name='nike'";
+    $sql ="UPDATE action set name='Nike'";
     $retval = mysqli_query($con,$sql);
 
 
@@ -33,6 +33,8 @@ if(isset($_POST['nike']))
     }
 
     //--2--
+    $sql = "SELECT * FROM nike where id =2";
+    $retval = mysqli_query($con,$sql);
     if(mysqli_num_rows($retval) > 0)
     {
         while($row = mysqli_fetch_assoc($retval))
@@ -238,7 +240,7 @@ if(isset($_POST['nike']))
 if(isset($_POST['puma']))
 {
     //inserted action
-    $sql ="UPDATE action set name='puma'";
+    $sql ="UPDATE action set name='Puma'";
     $retval = mysqli_query($con,$sql);
 
     //--1--
@@ -460,7 +462,7 @@ if(isset($_POST['puma']))
 if(isset($_POST['adidas']))
 {
     //inserted action
-    $sql ="UPDATE action set name='adidas'";
+    $sql ="UPDATE action set name='Adidas'";
     $retval = mysqli_query($con,$sql);
 
     //--1--
@@ -682,7 +684,7 @@ if(isset($_POST['adidas']))
 if(isset($_POST['reebok']))
 {
     //inserted action
-    $sql ="UPDATE action set name='reebok'";
+    $sql ="UPDATE action set name='Reebok'";
     $retval = mysqli_query($con,$sql);
 
 
@@ -905,7 +907,7 @@ if(isset($_POST['reebok']))
 if(isset($_POST['skechers']))
 {
     //inserted action
-    $sql ="UPDATE action set name='skechers'";
+    $sql ="UPDATE action set name='Skechers'";
     $retval = mysqli_query($con,$sql);
 
 
@@ -1128,7 +1130,7 @@ if(isset($_POST['skechers']))
 if(isset($_POST['spark']))
 {
     //inserted action
-    $sql ="UPDATE action set name='spark'";
+    $sql ="UPDATE action set name='Spark'";
     $retval = mysqli_query($con,$sql);
 
 
